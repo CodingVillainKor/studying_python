@@ -182,14 +182,24 @@ textarea {
 
 .d-none {
   display: none; }
+.small-text {
+    font-size: 0.7em; /* Adjust as needed */
+    display: inline-block;
+    opacity: 70%;
+}
+.big-text {
+  display: inline-block;
+  margin-top: 50px;
+}
+
 
 .home-hero {
   color: #fff;
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
-  height: 100vh;
-  min-height: 80rem;
-  max-height: 120rem;
+  height: 66vh;
+  min-height: 10rem;
+  max-height: 90rem;
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .home-hero {
@@ -257,6 +267,7 @@ textarea {
         grid-template-columns: 1fr;
         grid-gap: 8rem; } }
     .about__content-title {
+      text-align: right;
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 3rem; }
@@ -264,16 +275,26 @@ textarea {
         .about__content-title {
           font-size: 2.4rem; } }
     .about__content-details-para {
+      text-align: right;
       font-size: 1.8rem;
       color: grey;
       max-width: 60rem;
       line-height: 1.7;
-      margin-bottom: 1rem; }
+      margin-bottom: 0.2rem; }
       .about__content-details-para--hl {
         font-weight: 700;
         margin: 0 3px; }
       .about__content-details-para:last-child {
-        margin-bottom: 4rem; }
+        margin-bottom: 1rem; }
+    .about__content-youtubevideos {
+      margin-bottom: 5px;
+    }
+.my-gif {
+  width: 50rem;
+  height: auto;
+  margin-left: auto;
+  /* margin-right: auto; */
+}
 
 .projects__row {
   display: grid;
@@ -661,16 +682,18 @@ textarea {
 
 .skills {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.8rem;
   flex-wrap: wrap; }
-  .skills__skill {
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
+  .skills__text {
+    display: flex;
+    margin-left: auto;
+    text-align: center;
     font-size: 1.6rem;
-    background: rgba(153, 153, 153, 0.2);
-    border-radius: 5px;
-    font-weight: 600;
-    color: #777; }
+    margin-top: 1.0rem;
+    opacity: 60%;
+  }
 
 .mouse {
   width: 25px;
