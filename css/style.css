@@ -189,6 +189,7 @@ textarea {
 }
 .big-text {
   display: inline-block;
+  text-shadow: 2px 2px 4px rgba(0, 20, 250, 1.0);
   margin-top: 50px;
 }
 
